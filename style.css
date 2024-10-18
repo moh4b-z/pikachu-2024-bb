@@ -80,11 +80,11 @@ main{
 }
 
 .container h2{
-    font-size: 4vw;
+    font-size: 60px;
     color: var(--secondary-color);
 }
 .container p{
-    font-size: 1.4vw;
+    font-size: 20px;
     width: 40vw;
     color: var(--secondary-color);
 }
@@ -121,7 +121,63 @@ footer{
 .pikachi-image {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
     width: 40vw;
+}
+
+
+@media (max-width:960px) {
+    body{
+        padding-inline: 30px;
+        padding-bottom: 32px;
+    }
+    main{
+        justify-content: space-between;
+    }
+    footer{
+        display: none;
+    }
+    .pikachi-image {
+        width: 80vw;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    .container div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .container div h2{
+        width: 100%;
+    }
+    .container div p{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width:960px) {
+    header div{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    .container div h2{
+        font-size: 32px;
+    }
+    .container div p{
+        display: none;
+    }
+    .action{
+        width: 80%;
+    }
 }
